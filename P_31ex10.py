@@ -1,0 +1,20 @@
+Name = input("Enter your name: ")
+Name1 = input("Enter your partner's name: ")
+a = Name.lower()
+b = Name1.lower()
+T = a.count("t") + b.count("t")
+R = a.count("r") + b.count("r")
+U = a.count("u") + b.count("u")
+E = a.count("e") + b.count("e")
+L = a.count("l") + b.count("l")
+O = a.count("o") + b.count("o")
+V = a.count("v") + b.count("v")
+TRUE = str(T + R + U + E)
+LOVE = str(L + O + V + E)
+Score = int(TRUE + LOVE)
+if Score<=10 or Score>=90:
+    print(f"Your Score is {Score}% \n You both will be amazing together!.")
+elif 40<=Score<=50:
+    print(f"Your Score is {Score}% \n You both will be alright together.")
+else:
+    print(f"Your Score is {Score}%")
